@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/maestro-del-teclado.iml" filepath="$PROJECT_DIR$/.idea/maestro-del-teclado.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/mdt.iml" filepath="$PROJECT_DIR$/.idea/mdt.iml" />
     </modules>
   </component>
 </project>
