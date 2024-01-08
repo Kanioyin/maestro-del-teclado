@@ -3,25 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strona logowania</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Mistrz klawiatury</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div id="login-container">
-    <h2>Logowanie</h2>
-    <form id="login-form" onsubmit="login(event)">
-        <label for="username">Login:</label>
-        <input type="text" id="username" name="username" required>
-
-        <label for="password">Hasło:</label>
-        <input type="password" id="password" name="password" required>
-
-        <button type="submit">Zaloguj</button>
-    </form>
-    <p id="error-message"></p>
+<div>
+    <h1>Mistrz klawiatury</h1>
+    <div class="menu">
+        <a href="index.html">Strona główna</a>
+        <a href="kursy.php">Kursy</a>
+        <a href="ranking.php">Ranking</a>
+    </div>
+    <div class="logowanie">
+        <a href="logowanie.php">Zaloguj się</a>
+        <a href="rejestracja.php">Zarejestruj się</a>
+    </div>
+    <p>Witaj na stronie, na której możesz sprawdzić swoje umiejętności w pisaniu na klawiaturze.</p>
+    <h3>Najpopolarniejsze Kursy</h3>
+    <div class="kursy">
+        <div class="kurs">
+            <img src="images/kurs1.jpg" alt="kurs1">
+            <h4>Kurs podstawowy</h4>
+            <p>W tym kursie nauczysz się podstaw pisania na klawiaturze.</p>
+            <a href="kursy.php">Zobacz więcej</a>
+        </div>
+        <div class="kurs">
+            <img src="images/kurs2.jpg" alt="kurs2">
+            <h4>Kurs średniozaawansowany</h4>
+            <p>W tym kursie nauczysz się pisania na klawiaturze w średnim stopniu zaawansowania.</p>
+            <a href="kursy.php">Zobacz więcej</a>
+        </div>
+        <div class="kurs">
+            <img src="images/kurs3.jpg" alt="kurs3">
+            <h4>Kurs zaawansowany</h4>
+            <p>W tym kursie nauczysz się pisania na klawiaturze w zaawansowanym stopniu zaawansowania.</p>
+            <a href="kursy.php">Zobacz więcej</a>
+        </div>
+    </div>
 </div>
 
-<script src="main.js"></script>
 </body>
 </html>
