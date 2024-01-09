@@ -1,0 +1,139 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-icon {
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-bottom: 2px solid #3498db;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.menu a:hover {
+    background-color: #2980b9;
+}
+
+.menu a.highlight {
+    background-color: #3498db;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.menu a.highlight:hover {
+    color: #fff;
+}
+
+.content {
+    margin: 20px;
+}
+
+.kursy,
+.ranking {
+    display: flex;
+}
+
+.kursy {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.kurs {
+    width: 30%;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.kurs img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.kurs h4 {
+    color: #3498db;
+    margin: 15px;
+}
+
+.kurs p {
+    color: #555;
+    margin: 0 15px 15px;
+}
+
+.kurs .btn {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+}
+
+.kurs .btn:hover {
+    background-color: #2980b9;
+}
+
+.footer {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #3498db;
+        z-index: 1;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .header-content {
+        position: relative;
+    }
+}

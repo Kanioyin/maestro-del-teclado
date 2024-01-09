@@ -3,45 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mistrz klawiatury</title>
+    <title>Mistrz Klawiatury</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<div>
-    <h1>Mistrz klawiatury</h1>
-    <div class="menu">
-        <a href="index.html">Strona główna</a>
-        <a href="kursy.php">Kursy</a>
-        <a href="ranking.php">Ranking</a>
+<header class="header">
+    <div class="header-content">
+        <h1>Mistrz Klawiatury</h1>
+        <div class="menu-icon">&#9776;</div>
+        <nav class="menu">
+            <a href="index.html">Strona główna</a>
+            <a href="kursy.php">Kursy</a>
+            <a href="ranking.php">Ranking</a>
+            <a href="logowanie.php" class="highlight">Zaloguj się</a>
+            <a href="rejestracja.php" class="highlight">Zarejestruj się</a>
+        </nav>
     </div>
-    <div class="logowanie">
-        <a href="logowanie.php">Zaloguj się</a>
-        <a href="rejestracja.php">Zarejestruj się</a>
-    </div>
+</header>
+
+<div class="content">
     <p>Witaj na stronie, na której możesz sprawdzić swoje umiejętności w pisaniu na klawiaturze.</p>
-    <h3>Najpopolarniejsze Kursy</h3>
+    <h3>Najpopularniejsze Kursy</h3>
     <div class="kursy">
         <div class="kurs">
             <img src="images/kurs1.jpg" alt="kurs1">
-            <h4>Kurs podstawowy</h4>
+            <h4>Kurs Podstawowy</h4>
             <p>W tym kursie nauczysz się podstaw pisania na klawiaturze.</p>
-            <a href="kursy.php">Zobacz więcej</a>
+            <a href="kursy.php" class="btn">Zobacz więcej</a>
         </div>
         <div class="kurs">
-            <img src="images/kurs2.jpg" alt="kurs2">
-            <h4>Kurs średniozaawansowany</h4>
+            <img src="images/kurs1.jpg" alt="kurs2">
+            <h4>Kurs Średniozaawansowany</h4>
             <p>W tym kursie nauczysz się pisania na klawiaturze w średnim stopniu zaawansowania.</p>
-            <a href="kursy.php">Zobacz więcej</a>
+            <a href="kursy.php" class="btn">Zobacz więcej</a>
         </div>
         <div class="kurs">
-            <img src="images/kurs3.jpg" alt="kurs3">
-            <h4>Kurs zaawansowany</h4>
+            <img src="images/kurs1.jpg" alt="kurs3">
+            <h4>Kurs Zaawansowany</h4>
             <p>W tym kursie nauczysz się pisania na klawiaturze w zaawansowanym stopniu zaawansowania.</p>
-            <a href="kursy.php">Zobacz więcej</a>
+            <a href="kursy.php" class="btn">Zobacz więcej</a>
         </div>
     </div>
 </div>
 
+<footer class="footer">
+    &copy; 2024 Mistrz Klawiatury
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
