@@ -13,20 +13,21 @@ body {
 
 .header-content {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 }
 
-.menu-icon {
-    font-size: 24px;
-    color: #fff;
-    cursor: pointer;
-    display: none;
+.menu-left {
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+}
+.menu h1 {
+    margin-bottom: 10px; 
 }
 
 .menu {
     display: flex;
-    justify-content: space-around;
 }
 
 .menu a {
@@ -41,23 +42,29 @@ body {
     background-color: #2980b9;
 }
 
-.menu a.highlight {
-    background-color: #3498db;
-    color: #fff;
-    border-bottom: 2px solid #fff;
+.menu-right {
+    display: flex;
+    align-items: center;
 }
 
-.menu a.highlight:hover {
+.menu-right a {
+    margin-left: 10px;
+    text-decoration: none; 
+}
+
+.menu-right .highlight {
+    background-color: #3498db;
+    color: #fff;
+    border-bottom: 2px; 
+}
+
+.menu-right .highlight:hover {
     color: #fff;
 }
 
 .content {
     margin: 20px;
-}
-
-.kursy,
-.ranking {
-    display: flex;
+    
 }
 
 .kursy {
@@ -67,10 +74,12 @@ body {
 }
 
 .kurs {
-    width: 30%;
-    margin-bottom: 20px;
+    width: 30%; 
+    margin-right: 2%; 
+    float: left; 
     background-color: #fff;
     border-radius: 8px;
+    margin-bottom: 20px;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -103,6 +112,31 @@ body {
     background-color: #2980b9;
 }
 
+.ranking-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.ranking-table th, .ranking-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.ranking-table th {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.ranking-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.ranking-table tr:hover {
+    background-color: #ddd;
+}
+
 .footer {
     background-color: #3498db;
     color: #fff;
@@ -111,29 +145,4 @@ body {
     position: fixed;
     bottom: 0;
     width: 100%;
-}
-
-@media (max-width: 768px) {
-    .menu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 80px;
-        left: 0;
-        width: 100%;
-        background-color: #3498db;
-        z-index: 1;
-    }
-
-    .menu.show {
-        display: flex;
-    }
-
-    .menu-icon {
-        display: block;
-    }
-
-    .header-content {
-        position: relative;
-    }
 }

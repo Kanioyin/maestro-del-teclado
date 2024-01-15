@@ -11,41 +11,44 @@
 
 <header class="header">
     <div class="header-content">
-        <h1>Mistrz Klawiatury</h1>
-        <div class="menu-icon">&#9776;</div>
-        <nav class="menu">
-            <a href="index.html">Strona główna</a>
-            <a href="kursy.php">Kursy</a>
-            <a href="ranking.php">Ranking</a>
+        <div class="menu-left">
+            <h1>Mistrz Klawiatury</h1>
+            <nav class="menu">
+                <a href="index.html">Strona główna</a>
+                <a href="kursy.html">Kursy</a>
+                <a href="ranking.html">Ranking</a>
+            </nav>
+        </div>
+        <div class="menu-right">
             <a href="Logowanie/login.html" class="highlight">Zaloguj się</a>
             <a href="Logowanie/registration.html" class="highlight">Zarejestruj się</a>
-        </nav>
+        </div>
     </div>
 </header>
 
 <div class="content">
-    <p>Witaj na stronie, na której możesz sprawdzić swoje umiejętności w pisaniu na klawiaturze.</p>
-    <h3>Najpopularniejsze Kursy</h3>
+    <h3>Najpopularniejsze kursy</h3>
     <div class="kursy">
         <div class="kurs">
             <img src="images/kurs1.jpg" alt="kurs1">
             <h4>Kurs Podstawowy</h4>
             <p>W tym kursie nauczysz się podstaw pisania na klawiaturze.</p>
-            <a href="kursy.php" class="btn">Zobacz więcej</a>
+            <a href="#" class="btn">Zobacz więcej</a>
         </div>
         <div class="kurs">
             <img src="images/kurs1.jpg" alt="kurs2">
             <h4>Kurs Średniozaawansowany</h4>
             <p>W tym kursie nauczysz się pisania na klawiaturze w średnim stopniu zaawansowania.</p>
-            <a href="kursy.php" class="btn">Zobacz więcej</a>
+            <a href="#" class="btn">Zobacz więcej</a>
         </div>
         <div class="kurs">
             <img src="images/kurs1.jpg" alt="kurs3">
             <h4>Kurs Zaawansowany</h4>
             <p>W tym kursie nauczysz się pisania na klawiaturze w zaawansowanym stopniu zaawansowania.</p>
-            <a href="kursy.php" class="btn">Zobacz więcej</a>
+            <a href="#" class="btn">Zobacz więcej</a>
         </div>
     </div>
+</div>
 </div>
 
 <footer class="footer">
@@ -53,6 +56,22 @@
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="script.js"></script>
+<script src="main.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var loggedInUser = localStorage.getItem('loggedInUser');
+        if (loggedInUser) {
+            document.getElementById('login').style.display = 'none';
+            document.getElementById('register').style.display = 'none';
+            document.getElementById('username').textContent = loggedInUser;
+            document.getElementById('logout').style.display = 'block';
+        } else {
+            document.getElementById('login').style.display = 'block';
+            document.getElementById('register').style.display = 'block';
+            document.getElementById('username').style.display = 'none';
+            document.getElementById('logout').style.display = 'none';
+        }
+    });
+</script>
 </body>
 </html>
