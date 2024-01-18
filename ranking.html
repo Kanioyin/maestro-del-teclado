@@ -21,9 +21,7 @@
                     <a href="ranking.html">Ranking</a>
                 </nav>
             </div>
-            <div class="menu-right">
-                <a href="Logowanie/login.html" class="highlight">Zaloguj się</a>
-                <a href="Logowanie/registration.html" class="highlight">Zarejestruj się</a>
+            <div id="user-panel" class="menu-right">
             </div>
         </div>
     </header>
@@ -59,23 +57,7 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="main.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var loggedInUser = localStorage.getItem('loggedInUser');
-            if (loggedInUser) {
-                document.getElementById('login').style.display = 'none';
-                document.getElementById('register').style.display = 'none';
-                document.getElementById('username').textContent = loggedInUser;
-                document.getElementById('logout').style.display = 'block';
-            } else {
-                document.getElementById('login').style.display = 'block';
-                document.getElementById('register').style.display = 'block';
-                document.getElementById('username').style.display = 'none';
-                document.getElementById('logout').style.display = 'none';
-            }
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

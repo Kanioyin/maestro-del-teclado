@@ -20,26 +20,30 @@ body {
 .menu-left {
     display: flex;
     align-items: center;
-    flex-direction: column; 
+    flex-direction: column;
 }
 .menu h1 {
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
 
 .menu {
     display: flex;
 }
 
-.menu a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
-    border-bottom: 2px solid #3498db;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+.menu a, .menu-right a, .menu-right .highlight, #loggout-button, .kurs .btn, .ranking .btn {
+    background-color: #3498db; /* Niebieskie tło */
+    color: #fff; /* Biały tekst */
+    padding: 10px 15px; /* Dodanie paddingu */
+    border-radius: 5px; /* Zaokrąglenie rogów */
+    margin-left: 10px; /* Dodanie odstępu z lewej strony */
+    text-decoration: none; /* Usunięcie podkreślenia */
+    display: inline-block; /* Ustawienie jako blok inline */
+    cursor: pointer; /* Zmiana kursora na wskaźnik */
+    transition: background-color 0.3s ease-in-out; /* Dodanie animacji */
 }
 
-.menu a:hover {
-    background-color: #2980b9;
+.menu a:hover, .menu-right a:hover, .menu-right .highlight:hover, #loggout-button:hover, .kurs .btn:hover, .ranking .btn:hover {
+    background-color: #2980b9; /* Ciemniejszy niebieski kolor tła podczas najechania */
 }
 
 .menu-right {
@@ -47,25 +51,44 @@ body {
     align-items: center;
 }
 
-.menu-right a {
-    margin-left: 10px;
-    text-decoration: none; 
-}
+/*.menu-right a {*/
+/*    margin-left: 10px;*/
+/*    text-decoration: none;*/
+/*}*/
 
-.menu-right .highlight {
-    background-color: #3498db;
-    color: #fff;
-    border-bottom: 2px; 
-}
+/*.menu-right .highlight {*/
+/*    background-color: #3498db;*/
+/*    color: #fff;*/
+/*    border-bottom: 2px;*/
+/*}*/
 
-.menu-right .highlight:hover {
-    color: #fff;
-}
+/*.menu-right .highlight:hover {*/
+/*    color: #fff;*/
+/*}*/
 
 .content {
     margin: 20px;
-    
+
 }
+
+
+#loggout-button {
+    background-color: #3498db; /* Niebieskie tło */
+    color: #fff; /* Biały tekst */
+    border: none; /* Brak obramowania */
+    padding: 10px 15px; /* Dodanie paddingu */
+    text-align: center; /* Wyśrodkowanie tekstu */
+    text-decoration: none; /* Usunięcie podkreślenia */
+    display: inline-block; /* Ustawienie jako blok inline */
+    margin-left: 10px; /* Dodanie odstępu z lewej strony */
+    cursor: pointer; /* Zmiana kursora na wskaźnik */
+    border-radius: 5px; /* Zaokrąglenie rogów */
+}
+
+#loggout-button:hover {
+    background-color: #2980b9; /* Ciemniejszy niebieski kolor tła podczas najechania */
+}
+
 
 .kursy {
     display: flex;
@@ -74,14 +97,16 @@ body {
 }
 
 .kurs {
-    width: 30%; 
-    margin-right: 2%; 
-    float: left; 
+    width: 30%;
+    margin-right: 2%;
+    float: left;
     background-color: #fff;
     border-radius: 8px;
     margin-bottom: 20px;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px; /* Zaokrąglenie rogów */
+    position: relative;
 }
 
 .kurs img {
@@ -91,7 +116,7 @@ body {
 
 .kurs h4 {
     color: #3498db;
-    margin: 15px;
+    margin: 20px;
 }
 
 .kurs p {
@@ -106,7 +131,13 @@ body {
     background-color: #3498db;
     color: #fff;
     text-decoration: none;
+    width: 100%;
+    box-sizing: border-box;
+    bottom: 1px;
+    left: 50%;
+    transform: translateX(-1%);
 }
+
 
 .kurs .btn:hover {
     background-color: #2980b9;

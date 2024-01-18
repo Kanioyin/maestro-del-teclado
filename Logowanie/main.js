@@ -40,10 +40,12 @@ function login() {
     });
 
     if (userData && password === userData.password) {
+        localStorage.setItem('loggedUser', JSON.stringify(userData));
         window.location.href = "../index.html";
     } else {
         alert("Błędne dane logowania. Spróbuj ponownie.");
     }
+
 }
 
 function goToRegistration() {
