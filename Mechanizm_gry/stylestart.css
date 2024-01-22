@@ -1,0 +1,25 @@
+/* Styl dla kontenera, który wyśrodkuje przycisk */
+body {
+    display: flex;
+    justify-content: center; /* Wyśrodkowanie w poziomie */
+    align-items: center; /* Wyśrodkowanie w pionie */
+    height: 100vh; /* Pełna wysokość widoku */
+    margin: 0; /* Usunięcie domyślnego marginesu */
+}
+
+#start-button {
+    background-color: #3498db; /* Niebieskie tło */
+    color: #fff; /* Biały tekst */
+    border: none; /* Brak obramowania */
+    padding: 40px 60px; /* Zwiększenie paddingu */
+    font-size: 40px; /* Zwiększenie rozmiaru czcionki */
+    text-align: center; /* Wyśrodkowanie tekstu */
+    text-decoration: none; /* Usunięcie podkreślenia */
+    display: inline-block; /* Ustawienie jako blok inline */
+    cursor: pointer; /* Zmiana kursora na wskaźnik */
+    border-radius: 5px; /* Zaokrąglenie rogów */
+}
+
+#start-button:hover {
+    background-color: #2980b9; /* Ciemniejszy niebieski kolor tła podczas najechania */
+}

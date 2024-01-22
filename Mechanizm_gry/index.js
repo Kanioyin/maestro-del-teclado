@@ -1,5 +1,20 @@
+// funkcja do generowania losowych, zobatrz ktos czy działa bo mi cos nie chca sie zmieniac htmle
+function generateRandomText(length) {
+  var allowedChars = "dfhk ";
+  var text = "";
+  for (var i = 0; i < length; i++) {
+      text += allowedChars.charAt(Math.floor(Math.random() * allowedChars.length));
+  }
+  return text;
+}
+
+var randomText = generateRandomText(160);
+console.log(randomText);
+
+
 const PARAGRAPHS = [
-  'Kochać to nie znaczy zawsze to samo Uważaj ziomek bo ta suka leci na twoje siano Co znaczy kochać poznać jej nie dano Zweryfikuj wtórnie może sypiasz z blacharą',
+  'dd fdfhhd dfhkkhkhhkdfh  d f fh  k ffhfdkkkfkhhkff  fddfdfdddffkhdhd kk  f kffkf  h dffdfhd hdh kdhdffkhh  f   hdk k khhh hdd hhkkdff kkfdfkf dkk fdkkfdhfhhdfddk',
+
 ];
 
 const typingText = document.querySelector('.typing-text p');
