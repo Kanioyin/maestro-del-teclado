@@ -1,5 +1,5 @@
 const PARAGRAPHS = [
-    'Kochać to nie znaczy zawsze to samo Uważaj ziomek bo ta suka leci na twoje siano Co znaczy kochać poznać jej nie dano Zweryfikuj wtórnie może sypiasz z blacharą',
+    'Z jednej strony widnokręgu wznosiły się niewielkie wzgórza z ciemniejącymi na nich borkami i gajami; z drugiej wysoki brzeg Niemna, piaszczystą ścianą wyrastający z zieloności ziemi a koroną ciemnego boru oderznięty od błękitnego nieba, ogromnym półkolem obejmował równinę rozległą i gładką, z której gdzieniegdzie tylko wyrastały dzikie, pękate grusze, stare, krzywe wierzby i samotne, słupiaste topole.',
   ];
   
   const typingText = document.querySelector('.typing-text p');

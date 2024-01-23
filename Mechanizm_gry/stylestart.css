@@ -1,10 +1,181 @@
-/* Styl dla kontenera, który wyśrodkuje przycisk */
 body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+}
+
+.header-content {
     display: flex;
-    justify-content: center; /* Wyśrodkowanie w poziomie */
-    align-items: center; /* Wyśrodkowanie w pionie */
-    height: 100vh; /* Pełna wysokość widoku */
-    margin: 0; /* Usunięcie domyślnego marginesu */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-left {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.menu h1 {
+    margin-bottom: 10px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu a, .menu-right a, .menu-right .highlight, #loggout-button, .kurs .btn, .ranking .btn {
+    background-color: #3498db; /* Niebieskie tło */
+    color: #fff; /* Biały tekst */
+    padding: 10px 15px; /* Dodanie paddingu */
+    border-radius: 5px; /* Zaokrąglenie rogów */
+    margin-left: 10px; /* Dodanie odstępu z lewej strony */
+    text-decoration: none; /* Usunięcie podkreślenia */
+    display: inline-block; /* Ustawienie jako blok inline */
+    cursor: pointer; /* Zmiana kursora na wskaźnik */
+    transition: background-color 0.3s ease-in-out; /* Dodanie animacji */
+}
+
+.menu a:hover, .menu-right a:hover, .menu-right .highlight:hover, #loggout-button:hover, .kurs .btn:hover, .ranking .btn:hover {
+    background-color: #2980b9; /* Ciemniejszy niebieski kolor tła podczas najechania */
+}
+
+.menu-right {
+    display: flex;
+    align-items: center;
+}
+
+/*.menu-right a {*/
+/*    margin-left: 10px;*/
+/*    text-decoration: none;*/
+/*}*/
+
+/*.menu-right .highlight {*/
+/*    background-color: #3498db;*/
+/*    color: #fff;*/
+/*    border-bottom: 2px;*/
+/*}*/
+
+/*.menu-right .highlight:hover {*/
+/*    color: #fff;*/
+/*}*/
+
+.content {
+    margin: 20px;
+
+}
+
+
+#loggout-button {
+    background-color: #3498db; /* Niebieskie tło */
+    color: #fff; /* Biały tekst */
+    border: none; /* Brak obramowania */
+    padding: 10px 15px; /* Dodanie paddingu */
+    text-align: center; /* Wyśrodkowanie tekstu */
+    text-decoration: none; /* Usunięcie podkreślenia */
+    display: inline-block; /* Ustawienie jako blok inline */
+    margin-left: 10px; /* Dodanie odstępu z lewej strony */
+    cursor: pointer; /* Zmiana kursora na wskaźnik */
+    border-radius: 5px; /* Zaokrąglenie rogów */
+}
+
+#loggout-button:hover {
+    background-color: #2980b9; /* Ciemniejszy niebieski kolor tła podczas najechania */
+}
+
+
+.kursy {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.kurs {
+    width: 30%;
+    margin-right: 2%;
+    float: left;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px; /* Zaokrąglenie rogów */
+    position: relative;
+}
+
+.kurs img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.kurs h4 {
+    color: #3498db;
+    margin: 20px;
+}
+
+.kurs p {
+    color: #555;
+    margin: 0 15px 15px;
+}
+
+.kurs .btn {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    box-sizing: border-box;
+    bottom: 1px;
+    left: 50%;
+    transform: translateX(-1%);
+}
+
+
+.kurs .btn:hover {
+    background-color: #2980b9;
+}
+
+.ranking-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.ranking-table th, .ranking-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.ranking-table th {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.ranking-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.ranking-table tr:hover {
+    background-color: #ddd;
+}
+
+.footer {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 #start-button {
@@ -18,6 +189,9 @@ body {
     display: inline-block; /* Ustawienie jako blok inline */
     cursor: pointer; /* Zmiana kursora na wskaźnik */
     border-radius: 5px; /* Zaokrąglenie rogów */
+    text-align: center;
+    margin: auto;
+    
 }
 
 #start-button:hover {
